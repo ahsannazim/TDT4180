@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.Group?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
+	<!-- TODO Add Nodes -->
+	<Group fx:id="gallow">
+		<Line startX ="50" startY="350" endX="350" endY="350" stroke="BLACK"></Line>
+		<Line startX ="100" startY="50" endX="100" endY="350" stroke="BLACK"></Line>
+		<Line startX ="100" startY="50" endX="225" endY="50" stroke="BLACK"></Line>
+		<Line startX ="100" startY="125" endX="175" endY="50" stroke="BLACK"></Line>
+		<Line startX="225" startY="50" endX="225" endY="100" stroke="BLACK"></Line>
+	</Group>
+	<Group fx:id="person">
+		<Group fx:id="head">
+			<Circle centerX="225" centerY="125" radius="40" stroke="BLACK" fill="WHITE"></Circle>
+			<Line startX="205" startY="110" endX="215" endY="125" stroke="BLACK"></Line>
+			<Line startX="205" startY="125" endX="215" endY="110" stroke="BLACK"></Line>
+			<Line startX="235" startY="110" endX="245" endY="125" stroke="BLACK"></Line> 
+			<Line startX="235" startY="125" endX="245" endY="110"></Line>
+			<Arc centerX="225" centerY="155" radiusX="15" radiusY="20" startAngle="0" length="180" stroke="BLACK" fill="WHITE"></Arc>
+		</Group>
+		<Group fx:id="body">
+		<Line startX="225" startY="165" endX="225" endY="260"></Line>
+		<Line startX="180" startY="240" endX="225" endY="180"></Line>
+		<Line startX="225" startY="180" endX="265" endY="240"></Line>
+		<Line startX="180" startY="320" endX="225" endY="260"></Line>
+		<Line startX="225" startY="260" endX="265" endY="320"></Line>
+		</Group>
+	</Group>
+	
+</AnchorPane>
+

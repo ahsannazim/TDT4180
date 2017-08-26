@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.SpinnerValueFactory?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:id="gridPane"
+	fx:controller="appointment.AppointmentController">
+	
+	<!-- Formål og rom -->
+	<Label text="Formål: "
+		GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+	<TextField fx:id="formal"
+		GridPane.columnIndex="1" 	GridPane.rowIndex="0"></TextField>
+	
+	<Label text="Rom" 
+		GridPane.columnIndex="0" GridPane.rowIndex="1"></Label>
+	<TextField fx:id="rom" maxWidth="50"
+		GridPane.columnIndex="1" GridPane.rowIndex="1"
+		></TextField>
+	
+	
+	<Label text="" 
+		GridPane.columnIndex="0" GridPane.rowIndex="2"></Label>
+	
+	<!-- Dato og repetisjon -->
+	<Label text="Start-dato" 
+		GridPane.columnIndex="0" GridPane.rowIndex="3"></Label>
+	<DatePicker fx:id="start" maxWidth="110"
+		GridPane.columnIndex="1" GridPane.rowIndex="3"></DatePicker>
+	
+	<Label text="Slutt-dato: " 
+		GridPane.columnIndex="0" GridPane.rowIndex="5"></Label>
+	<DatePicker fx:id="slutt" maxWidth="110"
+		GridPane.columnIndex="1" GridPane.rowIndex="5"></DatePicker>
+		
+	<Label text="Repetisjonsfrekvens: "
+		GridPane.ColumnIndex="0" GridPane.rowIndex="4">
+	</Label>
+	<TextField fx:id ="repetisjon"
+		GridPane.columnIndex="1" GridPane.rowIndex="4" 
+		maxWidth="30"></TextField>
+		
+	
+	<Label text="" 
+		GridPane.columnIndex="0" GridPane.rowIndex="6"></Label>
+		
+		
+	<!-- Start- og slutt-tidspunkt for møte -->
+	<Label text="Start-tid: "
+		GridPane.columnIndex="0" GridPane.rowIndex="7">
+	</Label>
+	<TextField fx:id="fra"
+		GridPane.columnIndex = "1" GridPane.rowIndex="7"
+		maxWidth="56"></TextField>
+	
+	<Label text="Slutt-tid: "
+		GridPane.columnIndex="0" GridPane.rowIndex="8"></Label>
+	<TextField fx:id="til"
+		GridPane.columnIndex = "1" GridPane.rowIndex="8"
+		maxWidth="56"></TextField>
+	
+	<Button fx:id="knapp"
+		GridPane.columnIndex="1" GridPane.rowIndex="9"
+		text="Lagre">
+		</Button>
+</GridPane>
+
