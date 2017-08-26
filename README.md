@@ -1,2 +1,3 @@
-# TDT4180
-TDT4180 - Menneske-Maskin-Interaksjon
+# TDT4180 - Menneske-Maskin-Interaksjon
+
+JavaFX øvingsopplegg våren 2017 
